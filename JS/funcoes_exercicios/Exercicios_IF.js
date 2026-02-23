@@ -186,9 +186,9 @@ Exemplo:
 const prompt = require("prompt-sync")();
 
 let nome = prompt("Qual é o nome do cliente? ");
-let valor = Number(prompt(`Qual é o valor da compra do ${nome}?`));
+let valor = Number(prompt(`Qual é o valor da compra do ${nome}? `));
 
-fazerDesconto(valor)
+verificar(nome, valor)
 
 function verificar(nome, valor) {
     let desconto;
@@ -199,7 +199,17 @@ function verificar(nome, valor) {
     20% para compras acima de 500,00€.
     */
     if (valor <= 200){
-        valorComDesconto = valor % 10
+        desconto = Math.ceil((valor * 10 / 100) * 100) / 100;
+        valorComDesconto = valor - desconto
+        console.log(`Nome: ${nome}\nCompra: ${valor}€\nDesconto: ${desconto}€\nTotal a pagar: ${valorComDesconto}€`);
+    }else if (valor >= 200.01 && valor <= 500){
+        desconto = Math.ceil((valor * 15 / 100) * 100) / 100;
+        valorComDesconto = valor - desconto
+        console.log(`Nome: ${nome}\nCompra: ${valor}€\nDesconto: ${desconto}€\nTotal a pagar: ${valorComDesconto}€`);
+    }else{
+        desconto = Math.ceil((valor * 20 / 100) * 100) / 100;
+        valorComDesconto = valor - desconto
+        console.log(`Nome: ${nome}\nCompra: ${valor}€\nDesconto: ${desconto}€\nTotal a pagar: ${valorComDesconto}€`);
     }
 
 }
