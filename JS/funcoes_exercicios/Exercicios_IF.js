@@ -182,7 +182,7 @@ Exemplo:
  Total a pagar: 297,50€
 */
 
-
+/*
 const prompt = require("prompt-sync")();
 
 let nome = prompt("Qual é o nome do cliente? ");
@@ -197,7 +197,7 @@ function verificar(nome, valor) {
     10% para compras até 200,00€.
     15% para compras entre 200,01€ e 500,00€.
     20% para compras acima de 500,00€.
-    */
+    
     if (valor <= 200){
         desconto = Math.ceil((valor * 10 / 100) * 100) / 100;
         valorComDesconto = valor - desconto
@@ -213,4 +213,18 @@ function verificar(nome, valor) {
     }
 
 }
+*/
+
+/*
+Exercício 7: Calcular a Média de Notas com Pesos
+Enunciado:
+ O sistema de avaliação de uma disciplina tem três provas com pesos diferentes. A primeira tem peso 2, a segunda tem peso 3, e a terceira tem peso 5. Crie um programa para calcular a média final de um aluno e mostrar se ele está APROVADO (nota >= 6) ou REPROVADO (nota < 6).
+Exemplo:
+ Entrada: Nota1 = 7, Nota2 = 6, Nota3 = 9
+ Saída esperada:
+ Média: 7.4
+ Aprovado
+*/
+
+
 
