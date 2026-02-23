@@ -165,6 +165,7 @@ function verificar(num1, num2, num3){
 }
 */
 
+
 /*
 Exercício 6: Desconto de Compra
 Enunciado:
@@ -218,7 +219,9 @@ function verificar(nome, valor) {
 /*
 Exercício 7: Calcular a Média de Notas com Pesos
 Enunciado:
- O sistema de avaliação de uma disciplina tem três provas com pesos diferentes. A primeira tem peso 2, a segunda tem peso 3, e a terceira tem peso 5. Crie um programa para calcular a média final de um aluno e mostrar se ele está APROVADO (nota >= 6) ou REPROVADO (nota < 6).
+ O sistema de avaliação de uma disciplina tem três provas com pesos diferentes. 
+ A primeira tem peso 2, a segunda tem peso 3, e a terceira tem peso 5. 
+ Crie um programa para calcular a média final de um aluno e mostrar se ele está APROVADO (nota >= 6) ou REPROVADO (nota < 6).
 Exemplo:
  Entrada: Nota1 = 7, Nota2 = 6, Nota3 = 9
  Saída esperada:
