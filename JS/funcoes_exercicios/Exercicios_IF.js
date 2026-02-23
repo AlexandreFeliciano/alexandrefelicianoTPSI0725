@@ -38,7 +38,8 @@ Exemplo:
  Menor: 2
  */
 
-const prompt = require("prompt-sync")();
+/*
+ const prompt = require("prompt-sync")();
 
 let num1 = Number(prompt("Introduz o primeiro número: "));
 let num2 = Number(prompt("Introduz o segundo número: "));
@@ -64,5 +65,142 @@ function verificar(num1, num2, num3) {
         menor = num3;
     }
         console.log("O num " + maior + " é o maior e o num " + menor + " é o menor");
+}*/
+
+/*
+Exercício 3: Mostrar Números em Ordem Crescente e Decrescente
+Enunciado:
+ Crie 2 variáveis (num1 e num2) e leia o valor para cada uma delas. Mostre os valores de forma crescente e decrescente.
+Exemplo:
+ Entrada: num1 = 7, num2 = 2
+ Saída esperada:
+ Crescente: 2, 7
+ Decrescente: 7, 2
+*/
+
+/*
+ const prompt = require("prompt-sync")();
+
+let num1 = Number(prompt("Introduz o primeiro número: "));
+let num2 = Number(prompt("Introduz o segundo número: "));
+
+verificar(num1, num2)
+
+function verificar(num1, num2){
+
+    if(num1 > num2){
+        console.log(`Crescente: ${num2}, ${num1}\nDecrescente: ${num1}, ${num2}`);
+    }else{
+        console.log(`Crescente: ${num1}, ${num2}\nDecrescente: ${num2}, ${num1}`);
+    }
+}
+*/
+
+
+/*
+Exercício 4: Verificar se o Cheque Pode Ser Descontado
+Enunciado:
+ Desenvolva um Programa que leia o saldo inicial de um cliente de banco e leia também o valor de um cheque. Analise se o cheque pode ser descontado. Se o cheque não puder ser descontado, mostre essa informação, caso contrário, desconte o cheque e informe o saldo atualizado.
+Exemplo:
+ Entrada: Saldo = 500, Cheque = 300
+ Saída esperada:
+ Cheque descontado, saldo: 200
+*/
+
+/*
+ const prompt = require("prompt-sync")();
+
+let saldo = Number(prompt("Introduz o saldo do cliente: "));
+let cheque = Number(prompt("Introduz o cheque a descontar ao cliente: "));
+
+verificar(saldo, cheque)
+
+function verificar(saldo, cheque){
+
+    if(saldo > cheque){
+        saldo= saldo - cheque
+        console.log(`Cheque descontado. Saldo: ${saldo}`);
+    }else{
+        console.log(`O cheque não pode ser descontado`);
+    }
+}
+*/
+
+/*
+Exercício 5: Ler 3 Valores e Exibir em Ordem Crescente e Decrescente
+Enunciado:
+ Ler 3 valores inteiros e apresentar os valores dispostos em ordem crescente e decrescente.
+Exemplo:
+ Entrada: num1 = 4, num2 = 9, num3 = 2
+ Saída esperada:
+ Crescente: 2, 4, 9
+ Decrescente: 9, 4, 2
+*/
+
+
+/*
+ const prompt = require("prompt-sync")();
+
+let num1 = Number(prompt("Introduz o primeiro número: "));
+let num2 = Number(prompt("Introduz o segundo número: "));
+let num3 = Number(prompt("Introduz o terceiro número: "));
+
+verificar(num1, num2, num3)
+
+function verificar(num1, num2, num3){
+
+    if(num1 > num2 && num1 > num3 && num2 > num3){
+        console.log(`Crescente: ${num3}, ${num2}, ${num1}\nDecrescente: ${num1}, ${num2}, ${num3}`);
+    }else if(num1 > num2 && num1 > num3 && num3 > num2){
+        console.log(`Crescente: ${num2}, ${num3}, ${num1}\nDecrescente: ${num1}, ${num3}, ${num2}`);
+    }else if(num2 > num1 && num2 > num3 && num1 > num3){
+        console.log(`Crescente: ${num3}, ${num1}, ${num2}\nDecrescente: ${num2}, ${num1}, ${num3}`);
+    }else if(num2 > num1 && num2 > num3 && num3 > num1){
+        console.log(`Crescente: ${num1}, ${num3}, ${num2}\nDecrescente: ${num2}, ${num3}, ${num1}`);
+    }else if(num3 > num1 && num3 > num2 && num1 > num2){
+        console.log(`Crescente: ${num2}, ${num1}, ${num3}\nDecrescente: ${num3}, ${num1}, ${num2}`);
+    }else{
+        console.log(`Crescente: ${num1}, ${num2}, ${num3}\nDecrescente: ${num3}, ${num2}, ${num1}`);
+    }
+}
+*/
+
+/*
+Exercício 6: Desconto de Compra
+Enunciado:
+ Uma loja oferece descontos de acordo com o valor da compra:
+10% para compras até 200,00€.
+15% para compras entre 200,01€ e 500,00€.
+20% para compras acima de 500,00€.
+ Desenvolva um Programa que leia o nome do cliente e o valor da compra e mostre o valor do desconto e o valor total a pagar.
+Exemplo:
+ Entrada: Cliente: João, Compra: 350
+ Saída esperada:
+ Nome: João
+ Compra: 350,00€
+ Desconto: 52,50€
+ Total a pagar: 297,50€
+*/
+
+
+const prompt = require("prompt-sync")();
+
+let nome = prompt("Qual é o nome do cliente? ");
+let valor = Number(prompt(`Qual é o valor da compra do ${nome}?`));
+
+fazerDesconto(valor)
+
+function verificar(nome, valor) {
+    let desconto;
+    let valorComDesconto;
+    /*
+    10% para compras até 200,00€.
+    15% para compras entre 200,01€ e 500,00€.
+    20% para compras acima de 500,00€.
+    */
+    if (valor <= 200){
+        valorComDesconto = valor % 10
+    }
+
 }
 
