@@ -199,6 +199,7 @@ function verificar(nome, valor) {
     15% para compras entre 200,01€ e 500,00€.
     20% para compras acima de 500,00€.
     
+    
     if (valor <= 200){
         desconto = Math.ceil((valor * 10 / 100) * 100) / 100;
         valorComDesconto = valor - desconto
@@ -229,5 +230,218 @@ Exemplo:
  Aprovado
 */
 
+/*
+const prompt = require("prompt-sync")();
 
+let nota1 = Number(prompt("Introduza a primeira nota: "));
+let nota2 = Number(prompt("Introduza a segunda nota: "));
+let nota3 = Number(prompt("Introduza a terceira nota: "));
+let media
+
+verificar(nota1, nota2, nota3);
+
+function verificar(nota1, nota2, nota3) {
+
+    const peso1 = 2;
+    const peso2 = 3;
+    const peso3 = 5;
+
+    media = (nota1 * peso1 + nota2 * peso2 + nota3 * peso3) / (peso1 + peso2 + peso3);
+
+    console.log("Média: " + media);
+
+    if (media >= 6) {
+        console.log("Aprovado");
+    } else {
+        console.log("Reprovado");
+    }
+}
+*/
+
+/*
+Exercício 8: Calcular a Média de 10 Notas e informar notas iguais ou acima da media 
+Enunciado:
+Crie um programa que leia a nota de 10 alunos (notas de 0 a 20), calcule a média das notas e mostre a média. 
+Além disso, informe quantos alunos ficaram com a nota igual ou acima da média. 
+*/
+
+/*
+const prompt = require("prompt-sync")();
+
+let aluno1 = "Alex";
+let aluno2 = "Bruno";
+let aluno3 = "Dabid";
+let aluno4 = "Costa";
+let aluno5 = "Sérgio";
+let aluno6 = "Rui";
+let aluno7 = "Luís";
+let aluno8 = "Andreia";
+let aluno9 = "Nelson";
+let aluno10 = "Fonseca";
+
+
+let nota1 = Number(prompt(`Qual é a nota do ${aluno1}: `));
+let nota2 = Number(prompt(`Qual é a nota do ${aluno2}: `));
+let nota3 = Number(prompt(`Qual é a nota do ${aluno3}: `));
+let nota4 = Number(prompt(`Qual é a nota do ${aluno4}: `));
+let nota5 = Number(prompt(`Qual é a nota do ${aluno5}: `));
+let nota6 = Number(prompt(`Qual é a nota do ${aluno6}: `));
+let nota7 = Number(prompt(`Qual é a nota do ${aluno7}: `));
+let nota8 = Number(prompt(`Qual é a nota da ${aluno8}: `));
+let nota9 = Number(prompt(`Qual é a nota do ${aluno9}: `));
+let nota10 = Number(prompt(`Qual é a nota do ${aluno10}: `));
+
+function media(nota1,nota2,nota3,nota4,nota5,nota6,nota7,nota8,nota9,nota10){
+    return (nota1+nota2+nota3+nota4+nota5+nota6+nota7+nota8+nota9+nota10)/10;
+}
+
+function igualOuAcima(media,nota1,nota2,nota3,nota4,nota5,nota6,nota7,nota8,nota9,nota10){
+
+    let contador = 0;
+
+    if(nota1 >= media) contador++;
+    if(nota2 >= media) contador++;
+    if(nota3 >= media) contador++;
+    if(nota4 >= media) contador++;
+    if(nota5 >= media) contador++;
+    if(nota6 >= media) contador++;
+    if(nota7 >= media) contador++;
+    if(nota8 >= media) contador++;
+    if(nota9 >= media) contador++;
+    if(nota10 >= media) contador++;
+
+    return contador;
+}
+
+let mediaTurma = media(nota1,nota2,nota3,nota4,nota5,nota6,nota7,nota8,nota9,nota10);
+let resultado = igualOuAcima(mediaTurma,nota1,nota2,nota3,nota4,nota5,nota6,nota7,nota8,nota9,nota10);
+
+console.log("A média da turma é: " + mediaTurma);
+console.log("Alunos com nota igual ou acima da média: " + resultado);
+*/
+
+/*
+Exercício Switch: Exibir Nome do Mês
+Enunciado:
+Leia um número inteiro de 1 a 12 e mostre o nome do mês correspondente. Caso o número não seja válido, mostre uma mensagem de erro.
+Exemplo:
+Entrada: 5
+Saída esperada: Maio
+*/
+
+/*
+const prompt = require("prompt-sync")();
+
+let num = Number(prompt("Introduza um num de 1 a 12 para o programa mostrar o mes correspondente: "));
+
+switch (num) {
+    case 1:
+        console.log("Janeiro");
+        break;
+    case 2:
+        console.log("Fevereiro");
+        break;
+    case 3:
+        console.log("Março");
+        break;
+    case 4:
+        console.log("Abril");
+        break;
+    case 5:
+        console.log("Maio");
+        break;
+    case 6:
+        console.log("Junho");
+        break;
+    case 7:
+        console.log("Julho");
+        break;
+    case 8:
+        console.log("Agosto");
+        break;
+    case 9:
+        console.log("Setembro");
+        break;
+    case 10:
+        console.log("Outubro");
+        break;
+    case 11:
+        console.log("Novembro");
+        break;
+    case 12:
+        console.log("Dezembro");
+        break;
+    default:
+        console.log("Erro! O número tem que ser entre 1 e 12.");
+}
+*/
+
+/*
+Exercício Loop: Identificar Números Pares e Ímpares
+Enunciado:
+ Leia 10 números e determine quantos são pares e quantos são ímpares.
+Exemplo:
+ Entrada: 2, 3, 5, 6, 8, 9, 10, 12, 14, 15
+ Saída esperada:
+ Pares: 6
+ Ímpares: 4
+*/
+
+/*
+const prompt = require("prompt-sync")();
+
+let numero1 = Number(prompt("Digite o 1º número: "));
+let numero2 = Number(prompt("Digite o 2º número: "));
+let numero3 = Number(prompt("Digite o 3º número: "));
+let numero4 = Number(prompt("Digite o 4º número: "));
+let numero5 = Number(prompt("Digite o 5º número: "));
+let numero6 = Number(prompt("Digite o 6º número: "));
+let numero7 = Number(prompt("Digite o 7º número: "));
+let numero8 = Number(prompt("Digite o 8º número: "));
+let numero9 = Number(prompt("Digite o 9º número: "));
+let numero10 = Number(prompt("Digite o 10º número: "));
+
+function contarPares(numero1, numero2, numero3, numero4, numero5, numero6, numero7, numero8, numero9, numero10) {
+    
+    let pares = 0;
+    
+    if (numero1 % 2 === 0) pares++;
+    if (numero2 % 2 === 0) pares++;
+    if (numero3 % 2 === 0) pares++;
+    if (numero4 % 2 === 0) pares++;
+    if (numero5 % 2 === 0) pares++;
+    if (numero6 % 2 === 0) pares++;
+    if (numero7 % 2 === 0) pares++;
+    if (numero8 % 2 === 0) pares++;
+    if (numero9 % 2 === 0) pares++;
+    if (numero10 % 2 === 0) pares++;
+    
+    return pares;
+}
+
+function contarImpares(numero1, numero2, numero3, numero4, numero5, numero6, numero7, numero8, numero9, numero10) {
+
+    let impares = 0;
+    
+    if (numero1 % 2 !== 0) impares++;
+    if (numero2 % 2 !== 0) impares++;
+    if (numero3 % 2 !== 0) impares++;
+    if (numero4 % 2 !== 0) impares++;
+    if (numero5 % 2 !== 0) impares++;
+    if (numero6 % 2 !== 0) impares++;
+    if (numero7 % 2 !== 0) impares++;
+    if (numero8 % 2 !== 0) impares++;
+    if (numero9 % 2 !== 0) impares++;
+    if (numero10 % 2 !== 0) impares++;
+    
+    return impares;
+}
+
+let totalPares = contarPares(numero1, numero2, numero3, numero4, numero5, numero6, numero7, numero8, numero9, numero10);
+
+let totalImpares = contarImpares(numero1, numero2, numero3, numero4, numero5, numero6, numero7, numero8, numero9, numero10);
+
+console.log(`Pares: ${totalPares}`);
+console.log(`Ímpares: ${totalImpares}`);
+*/
 
