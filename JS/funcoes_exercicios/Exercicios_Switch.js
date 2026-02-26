@@ -98,3 +98,68 @@ function tipoDePedido(pedido) {
 
 console.log(tipoDePedido(pedido));
 */
+
+/*
+4. Tipo de dado
+Analisa um valor e retorna o seu tipo:
+•	Número inteiro
+•	Número decimal
+•	String numérica
+•	String textual
+•	Lista
+•	Tipo desconhecido
+Exemplo:
+Entrada → [10, 20, 30]
+Saída → Lista
+*/
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/*
+5. Análise de mensagem
+Recebe uma mensagem e retorna:
+•	“Saudação” se for “olá” ou “bom dia”
+•	“Pergunta” se terminar com “?”
+•	“Despedida” se contiver “tchau” ou “adeus”
+•	“Mensagem genérica” caso contrário
+Exemplo:
+Entrada → “Tudo bem?”
+Saída → Pergunta
+*/
+
+const prompt = require("prompt-sync")();
+
+let mensagem = prompt("Digite a mensagem: ");
+
+function analisarMensagem(mensagem) {
+
+    if (mensagem === "olá" || mensagem === "bom dia") {
+        return "Saudação";
+    } 
+    else if (mensagem.endsWith("?")) {
+        return "Pergunta";
+    } 
+    else if (mensagem.includes("tchau") || mensagem.includes("adeus")) {
+        return "Despedida";
+    } 
+    else {
+        return "Mensagem genérica";
+    }
+}
+
+console.log(analisarMensagem(mensagem));
