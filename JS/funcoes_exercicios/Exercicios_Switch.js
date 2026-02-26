@@ -37,4 +37,26 @@ Entrada → Bom
 Saída →  70-89
 */
 
+/*
+const prompt = require("prompt-sync")();
 
+let nota = Number(prompt("Digite uma nota de 0 a 100 para saber a sua classificação: "));
+
+function classificarNota(nota) {
+    if (nota >= 0 && nota < 50) {
+        return "Insuficiente";
+    } else if (nota >= 50 && nota < 65) {
+        return "Suficiente";
+    } else if (nota >= 65 && nota < 80) {
+        return "Bom";
+    } else if (nota >= 80 && nota <= 100) {
+        return "Muito Bom";
+    } else {
+        return "Nota inválida!";
+    }
+}
+
+let resultado = classificarNota(nota);
+
+console.log(resultado);
+*/
