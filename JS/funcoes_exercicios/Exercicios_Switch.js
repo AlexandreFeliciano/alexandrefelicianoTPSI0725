@@ -60,3 +60,41 @@ let resultado = classificarNota(nota);
 
 console.log(resultado);
 */
+
+/*
+3. Tipo de pedido
+Recebe um dicionário com as chaves "tipo" e "valor".
+Exibe:
+•	“Compra de X€” se tipo for “compra”
+•	“Venda de X€” se tipo for “venda”
+•	“Pedido desconhecido” caso contrário
+Exemplo:
+Entrada → {"tipo": "venda", "valor": 250}
+Saída → Venda de 250€
+*/
+
+/*
+const prompt = require("prompt-sync")();
+
+let tipo = prompt("Selecione o tipo do pedido (compra/venda): ");
+let valor = Number(prompt("Digite o valor do pedido: "));
+
+let pedido = {
+    tipo: tipo,
+    valor: valor
+};
+
+function tipoDePedido(pedido) {
+    if (pedido.tipo === "compra") {
+        return `Compra de ${pedido.valor}€`;
+    } 
+    else if (pedido.tipo === "venda") {
+        return `Venda de ${pedido.valor}€`;
+    } 
+    else {
+        return "Pedido desconhecido";
+    }
+}
+
+console.log(tipoDePedido(pedido));
+*/
